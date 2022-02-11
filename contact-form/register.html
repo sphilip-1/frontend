@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Minerva</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="register.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="register."></script>
+        <script src="api.js"></script>
+    </head>
+    <body>
+        <nav> 
+            <div class="menu_logo">
+                <li><a href="index.html"><img src="Minerva.png" width="70" height="55"></a></li>
+            </div>
+            <div class="leftMenu">
+                <ul>
+                    <!-- <li><a href="index.html"><img src="Minerva.png" width="60" height="50"></a></li> -->
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                    <li><a href="courses.html">COURSES</a></li>
+                    <li><a href="contactus.html">CONTACT US</a></li> 
+            </div>
+            <div class="rightMenu">
+                <ul>
+                    <li><a href="signin.html">SIGN IN</a></li>
+                    <li><a href="register.html">REGISTER</a></li>
+                </ul>
+            </div>
+        </nav>
+        <br> <br>
+    </body>
+        <section>
+            <form id="register" novalidate>
+                <div class="register_minerva_logo">
+                    <img class= "register_logo" src="Minerva.png" alt="Logo">
+                </div> 
+                <div class="register_form">
+                    <div align="center"><class="register_form_input">
+                        <input class = "Inputtext" type="text" id="firstname" name="firstname" placeholder = "First name" required maxlength="50"><br><br>
+                        <input class = "Inputtext" type="text" id="lastname" name="lastname" placeholder = "Last name"required maxlength="50"><br><br>
+                        <input class = "Inputtext" type="email" id="email" name="email" placeholder = "Email"required><br><br>
+                        <input class = "Inputtext" type="password" id="password" name="password" placeholder = "Password"required minlength="8"><br><br>
+                        <input class = "Inputtext" type="repeatpassword" id="repeatPassword" name="repeatPassword" placeholder = "Re-type Password"required minlength="8"><br><br>
+                        <input type="checkbox" id="t&c" name="t&C" value="t&C" required>
+                        <label for="t&C">I agree to the <a href="">Terms of Use</a> and <a href="">Privacy Policy</a>.</label>
+                        <br><br>
+                        <input class = "register_button" type="submit" id="sub" value="register">
+                        <div class="register_login_link">
+                            <p>Already have an account? Sign in <a href=""><b>Here</b></a></p>
+                         </div>
+                         <div class = "message" id=" messageHidden">
+                        </div>
+                     </div>
+                </div>
+            </form>
+        </section>
+    </body>
+</html>

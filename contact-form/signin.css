@@ -1,0 +1,128 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: #364258;
+}
+
+nav{
+    width: 100%;
+    height: 80px;
+    border-radius: 100px;
+    background-color: #f6cf70;
+}
+
+.leftMenu ul{
+    padding : 0px 130px;
+}
+/* menu box */
+.leftMenu ul li {
+    list-style: none;
+    display: inline-block;
+    float: left;
+    line-height: 80px
+}
+/* menu text */
+.leftMenu ul li a { 
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Helvetica;
+    font-weight: bold;
+    color: #364258;
+    padding : 0px 20px;
+}
+.leftMenu ul li a:hover {
+    color: beige;
+}
+.rightMenu ul{
+    padding : 0px 20px
+}
+.rightMenu ul li{
+    list-style: none;
+    display: inline-block;
+    float: right;
+    line-height: 80px
+}
+.rightMenu ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Helvetica;
+    font-weight: bold;
+    color: #364258;
+    padding : 0px 20px;
+}
+.rightMenu ul li a:hover{
+    color: beige
+}
+.menu_logo
+{
+    position: absolute;
+    margin-top: 16px;
+    margin-left: 10px;
+} 
+.signin,
+.signin * 
+{
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+.signin
+{
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 50 50 150px rgba(0, 0, 0, 0.15)
+}
+.signin_minerva_logo{
+    padding: 30px;
+    background: #f6cf70;
+}
+.signin_logo{
+    border-radius: 20px;
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+}
+.signin_form{
+    padding: 30px;
+    background: #f6cf70;
+}
+.Inputtext{
+    width: 60%;
+    margin: auto;
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 50px;
+    border: 2px solid #dddddd;
+    background-color:#ffffffe0;
+    outline: none;
+    transition: border-colour 0.5s;
+}
+.Inputtext:focus {
+    border-color:  #364258;
+}
+.signin_button{
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50px;
+    color: #ffffff;
+    font-weight: bold;
+    background: #364258;
+    font-weight: bold;
+    width: 60%;
+    border: none;
+    outline: none
+}
+.signin_button:active{
+    background: #252d3d;
+}
+.signin_register_link{
+    font-family: Helvetica;
+    font-size: medium;
+}
+.message{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}

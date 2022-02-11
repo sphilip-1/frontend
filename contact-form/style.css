@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+}
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: #364258;
+    font-family: Helvetica;
+}
+h1{
+    color: #364258;
+    font-size: 50px;
+    text-align: center;
+}
+
+h2{
+	color:#364258;
+}
+
+h3{
+    color:#f6cf70;
+    font-size: 20px;
+    text-align: center;
+}
+
+.menu_logo{
+    list-style: none;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.navbar{
+    border-radius: 100px;
+    width: 100%;
+    height: 80px;
+    background-color: #f6cf70;
+}
+
+.leftMenu ul{
+    padding : 0px 130px;
+}
+/* menu box */
+.leftMenu ul li {
+    list-style: none;
+    border-radius: 100px;
+    display: flex;
+    font-weight: bold;
+    float: left;
+    line-height: 80px
+}
+/* menu text */
+.leftMenu ul li a { 
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Helvetica;
+    color: #364258;
+    padding : 0px 20px;
+
+}
+.leftMenu ul li a:hover,
+.leftMenu ul li a.active {
+    
+    color: #364258
+}
+.navbar.leftMenu.menu-button i{
+    color: #364258;
+}
+.rightMenu ul{
+    padding : 0px 20px
+}
+.rightMenu ul li{
+    display: flex;
+    float: right;
+    line-height: 80px
+}
+.rightMenu ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Helvetica;
+    color: #364258;
+    font-weight: bold;
+    padding : 0px 20px;
+}
+.rightMenu ul li a:hover{
+    color: beige
+}
+.small-menu{  
+    display:none;  
+    color:#364258;
+    font-size: 20px; 
+    padding: 25px 90%;
+    cursor:pointer;
+   }  
+   #click{
+       display: none;
+   }
+
+@media only screen and (max-width: 425px) {
+    h1{
+        padding-top: 25px;
+        font-size: 25px;
+        align-items: center;
+    }
+    h3{
+        padding-top: 10px;
+        font-size: 15px;
+        align-items: center;
+    }
+    .navbar{
+        border-radius: 0px;
+        width: 100%;
+        height: 80px;
+        background-color: #f6cf70;
+    }
+    .leftMenu ul{
+        position: fixed;
+        top: 80px;
+        left: 0%;
+        background: #e4cb8e;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+    .leftMenu ul li{
+        padding-top: 5px;
+        margin: 0 50px;
+    }
+    .leftMenu ul li a {
+        padding: 0;
+        text-align: center;
+    }
+    .rightMenu ul li{
+        display: none;
+    }
+    #click:checked ~ ul{
+        left: 0%;
+    }
+    .small-menu{  
+        display:block; 
+    }  
+    #click:checked ~ .small-menu::before{
+        content: "\f00d";
+    }
+}
+
+h9 {
+    font-size: 30px;
+	position: absolute;
+right: 223px;
+	 font-weight: bold;
+color:#28303e;
+}
